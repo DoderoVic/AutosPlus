@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo_productos>
+    <producto id="P001">
+        <nombre>Acura MDX</nombre>
+        <tipo>SUV de lujo</tipo>
+        <precio moneda="MXN">350,000</precio>
+        <descripcion>SUV con máximo lujo para familias grandes, lista para viajar.</descripcion>
+    </producto>
+    <producto id="P002">
+        <nombre>Honda Civic</nombre>
+        <tipo>Sedán</tipo>
+        <precio moneda="MXN">216,000</precio>
+        <descripcion>Sedán compacto ahorrador de gasolina, perfecto para estudiantes.</descripcion>
+    </producto>
+    <producto id="P003">
+        <nombre>Nissan Versa</nombre>
+        <tipo>Sedán subcompacto</tipo>
+        <precio moneda="MXN">200,000</precio>
+        <descripcion>Sedán super ahorrador de gasolina, ideal para trabajos de plataformas.</descripcion>
+    </producto>
+</catalogo_productos>
+
+

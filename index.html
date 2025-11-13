@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!--Titulo de la página-->
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 id="titulo-principal"> </h1>
+            <p>AutoPlus</p>
+        </div>
+    </header>
+
+
+<!--Menú de la página-->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#menu">Vehiculos</a></li>
+                <li><a href="#contacto">Contácto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="datos.xml" target="_blank" class="xml-link">Ver Catálogo XML</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!--Foto del local o negocio de la página-->
+    <main class="container">
+        <section id="intro" class="section-box">
+            <h2>Los mejores autos de la ciudad</h2>
+            <p></p>
+            <img src="imagenes/logo.jpg" alt="" width="300" class="responsive-img">
+        </section>
+
+<!--Horario de atención-->
+        <section id="horario" class="section-box">
+            <h2 class="section-title">⏰ Nuestro Horario</h2>
+            <p></p>
+            <ul>
+                <li>Lunes a Viernes de 9:00 am - 5:00 pm</li>
+                <li>Sabado de 10:00 am - 5:00 pm</li>
+                <li>Domingo de 10:00 am - 2:00 pm</li>
+            </ul>
+        </section>
+
+<!--Menú del local Bebidas, comida-->
+        <section id="menu" class="section-box layout-grid">
+            <h1 class="section-title-menu">Vehículos disponibles</h1>
+            <div class="menu-grid">
+                <div class="menu-col">
+                    <h3>Acura</h3>
+                    <ul>
+                        <li>MDX</li>
+                        <li>RDX</li>
+                        <li>TLX</li>
+                        <li>ILX</li>
+                    </ul>
+                </div>
+
+                <div class="menu-col">
+                    <h3>Honda</h3>
+                    <ul>
+                        <li>Pilot</li>
+                        <li>Civic</li>
+                        <li>Accord</li>
+                        <li>CR-V</li>
+                    </ul>
+                </div>
+
+                <div class="menu-col">
+                    <h3>Nissan</h3>
+                    <ul>
+                        <li>Murano</li>
+                        <li>X-Trail</li>
+                        <li>Sentra</li>
+                        <li>Versa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="full-width">
+                <h3>Precios</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Acura</th>
+                            <th>Honda</th>
+                            <th>Nissan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MDX 2020 $350,000</td>
+                            <td>Pilot 2018 $245,000</td>
+                            <td>Murano 2017 $185,000</td>
+                        </tr>
+                        <tr>
+                            <td>RDX 2019 $260,000</td>
+                            <td>Civic 2017 $216,000</td>
+                            <td>X-Trail 2022 $250,000</td>
+                        </tr>
+                        <tr>
+                            <td>TLX 2021 $230,000</td>
+                            <td>Accord 2020 $280,000</td>
+                            <td>Sentra 2018 $150,000</td>
+                        </tr>
+                        <tr>
+                            <td>ILX 2020 $210,000</td>
+                            <td>CR-V 2022 $315,000</td>
+                            <td>Versa 2021 $200,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+<!--Mapa con la ubicación del negocio o local-->
+        <section id="ubicacion" class="section-box">
+            <h2>Nuestra ubicación</h2>
+            <p>Calle Ramón Rayon con Calle Tical #2153</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d300.29840384927286!2d-106.38926285377354!3d31.620469880372667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1762925027760!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+<!--Formulario-->
+        <section id="contacto" class="section-box">
+            <h2 class="section-title">Contáctanos</h2>
+            <form id="contact-form" method="POST">
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="nombre">
+                
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Email">
+                
+                <label for=""></label>
+                <select id="" name="" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="Cotización">Cotización</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Duda">Duda</option>
+                </select>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje (Mínimo 10 caracteres)" pattern=".{10,}" title="El mensaje debe tener al menos 10 caracteres."></textarea>
+                
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </section>
+        <script>
+        // COMENTARIOS EN CÓDIGO: Función para manejar el envío y usar localStorage
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            // 1. Prevenir el envío normal del formulario (Evita la recarga/navegación)
+            event.preventDefault(); 
+            
+            // 2. Recolectar datos del formulario
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                correo: document.getElementById('correo').value,
+                asunto: document.getElementById('asunto').value,
+                mensaje: document.getElementById('mensaje').value,
+                fechaEnvio: new Date().toLocaleString()
+            };
+
+            // 3. Guardar los datos como una cadena JSON en localStorage
+            try {
+                // localStorage solo guarda cadenas, así que convertimos el objeto a JSON
+                localStorage.setItem('contactoCafeTec', JSON.stringify(formData));
+                
+                // 4. Mostrar una notificación al usuario y limpiar formulario
+                alert('¡Mensaje guardado localmente! (Datos almacenados en localStorage)');
+                this.reset(); // Limpia los campos del formulario
+                
+                console.log('Datos guardados en localStorage:', formData);
+
+            } catch (e) {
+                alert('Error al intentar guardar los datos localmente. El navegador no soporta o tiene lleno el Local Storage.');
+                console.error("Error de Local Storage:", e);
+            }
+        });
+    </script>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Café Tec. Un proyecto estudiantil. | <a href="aviso.html">Aviso de Privacidad</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
